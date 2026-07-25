@@ -4,3 +4,41 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.image-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.image-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+
+.image-card h3 {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+            
+  color: #ffffff;
+  background-color: #00000099;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+#backgroundImg {
+  background-image: url("img/jeybi-esguerra-0DWgqDOwfNI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
