@@ -1,10 +1,9 @@
 /* CSS Reset */
-* {
-  margin: 0;
-  padding: 0;
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
+/* Cards */
 .image-card {
   position: relative;
   display: block;
@@ -37,7 +36,8 @@
   font-size: 1.1rem;
 }
 
-#backgroundImg {
+/* Layout */
+#banner {
   background-image: url("../img/jeybi-esguerra-0DWgqDOwfNI-unsplash.jpg");
   background-size: cover;
   background-position: center;
