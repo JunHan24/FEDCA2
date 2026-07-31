@@ -36,7 +36,7 @@
   font-size: 1.1rem;
 }
 
-/* Layout */
+/* Banners & Images */
 #banner {
   background-image: url("../img/placeholder.jpg");
   background-size: cover;
@@ -47,6 +47,24 @@
   margin-bottom: 10px;
 }
 
+#banner2 {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+#banner2 h2 {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.content-images {
+  width: 450px;
+  border-radius: 10px;
+}
+
+/* Layout */
 header {
   background-color: #0F6B72;
 }
