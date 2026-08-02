@@ -6,6 +6,7 @@
     <title>SGCompass | Home</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
 </head>
 <body class="d-flex flex-column m-0">
     <header class="d-flex justify-content-between">
@@ -23,70 +24,91 @@
     <main class="m-4">
         <h2>Discover Your Next Destination</h2>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-5 gy-3 justify-content-evenly align-items-center m-1">
+        <section class="row mb-4">
+            <div class="col-md-8">
+                <input
+                    type="text"
+                    id="searchInput"
+                    class="form-control"
+                    placeholder="Search destinations...">
+            </div>
+
+            <div class="col-md-4">
+                <select id="categoryFilter" class="form-select">
+                    <option value="all">All Categories</option>
+                    <option value="hotel">Hotels</option>
+                    <option value="nature">Nature & Beauty</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="museum">Museum</option>
+                    <option value="heritage">Heritage</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="destinationContainer" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-5 gy-3 justify-content-evenly align-items-center m-1">
             <!-- Destination 1 -->
-            <a class="col image-card" href="pages/mainpages/destination1.html">
+            <a class="col image-card" href="pages/mainpages/destination1.html" data-category="hotel,shopping">
                 <img src="assets/img/MBSImgs/marinaBaySandsNight.jpg" alt="Marina Bay">
                 <!-- Image Source: https://unsplash.com/photos/gray-building-during-night-viwdmfrbXfI -->
                 <h3>Marina Bay</h3>
             </a>
 
             <!-- Destination 2 -->
-            <a class="col image-card" href="pages/mainpages/destination2.html">
+            <a class="col image-card" href="pages/mainpages/destination2.html" data-category="nature">
                 <img src="assets/img/GBTBImgs/gardensBayTheBayNight.jpg" alt="Gardens By The Bay">
                 <!-- Image Source: https://unsplash.com/photos/blue-lighted-gardens-by-the-bay-during-night-YlPYR7DrsOE -->
                 <h3>Gardens By The Bay</h3>
             </a>
 
             <!-- Destination 3 -->
-            <a class="col image-card" href="pages/mainpages/destination3.html">
+            <a class="col image-card" href="pages/mainpages/destination3.html" data-category="shopping">
                 <img src="assets/img/ORImgs/OrchardRoad.jpg" alt="Orchard Road">
                 <!-- Image Source:https://unsplash.com/photos/a-street-filled-with-lots-of-lights-and-decorations-WLZ8hKKbkFM -->
                 <h3>Orchard Road</h3>
             </a>
 
             <!-- Destination 4 -->
-            <a class="col image-card" href="pages/mainpages/destination4.html">
+            <a class="col image-card" href="pages/mainpages/destination4.html" data-category="museum">
                 <img src="assets/img/NGSImgs/NationalGallerySingapore.jpg" alt="National Gallery Singapore">
                 <!-- Image Source: https://unsplash.com/photos/historic-building-stands-beneath-a-cloudy-sky-GuCXbB0zjLU -->
                 <h3>National Gallery Singapore</h3>
             </a>
 
             <!-- Destination 5 -->
-            <a class="col image-card" href="pages/mainpages/destination5.html">
+            <a class="col image-card" href="pages/mainpages/destination5.html" data-category="nature">
                 <img src="assets/img/CG_IMG/ChineseGarden.jpg" alt="Chinese Garden">
                 <!-- Image Source: https://unsplash.com/photos/brown-and-white-concrete-building-near-body-of-water-during-daytime-Hefv2jQa3hc -->
                 <h3>Chinese Garden</h3>
             </a>
 
             <!-- Destination 6 -->
-            <a class="col image-card" href="pages/mainpages/destination6.html">
+            <a class="col image-card" href="pages/mainpages/destination6.html" data-category="hotel,nature">
                 <img src="assets/img/ST_IMG/Sentosa.jpg" alt="Sentosa">
                 <!-- Image Source: https://unsplash.com/photos/people-taking-photos-in-front-of-universal-globe-7LNzso56Q0k -->
                 <h3>Sentosa</h3>
             </a>
 
             <!-- Destination 7 -->
-            <a class="col image-card" href="pages/mainpages/destination7.html">
+            <a class="col image-card" href="pages/mainpages/destination7.html" data-category="heritage,shopping">
                 <img src="assets/img/CTImgs/chinatown.jpg" alt="Chinatown">
                 <!-- https://www.pexels.com/photo/low-angle-shot-of-illuminated-building-at-night-326715/ -->
                 <h3>Chinatown</h3>
             </a>
 
             <!-- Destination 8 -->
-            <a class="col image-card" href="pages/mainpages/destination8.html">
+            <a class="col image-card" href="pages/mainpages/destination8.html" data-category="shopping">
                 <img src="assets/img/CJ_IMGS/changi jewel.jpg" alt="Changi Jewel">
                 <!-- https://unsplash.com/photos/a-large-fountain-in-the-middle-of-a-city-at-night-SYD5y-b93M0 -->
                 <h3>Changi Jewel</h3>
             </a>
 
             <!-- Destination 9 -->
-            <a class="col image-card" href="pages/mainpages/destination9.html">
+            <a class="col image-card" href="pages/mainpages/destination9.html" data-category="nature">
                 <img src="assets/img/BG_Imgs/botanic gardens.jpg" alt="Botanic Gardens">
                 <!-- https://unsplash.com/photos/a-white-gazebo-surrounded-by-lush-green-trees-LPizc_74-LY -->
                 <h3>Botanic Gardens</h3>
             </a>
-        </div>
+        </section>
     </main>
 
     <footer class="p-5">
