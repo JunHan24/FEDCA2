@@ -37,7 +37,7 @@
 }
 
 /* Banners & Images */
-#banner {
+.banner {
   background-image: url("../img/placeholder.jpg");
   background-size: cover;
   background-position: center;
@@ -63,6 +63,16 @@
   width: 450px;
   border-radius: 10px;
 }
+
+.bannerImg1 {background-image: url("../img/MBSImgs/marinaBaySandsNight.jpg");}
+.bannerImg2 {background-image: url("../img/GBTBImgs/gardensBayTheBayNight.jpg");}
+.bannerImg3 {background-image: url("../img/ORImgs/OrchardRoad.jpg");}
+.bannerImg4 {background-image: url("../img/NGSImgs/NationalGallerySingapore.jpg");}
+.bannerImg5 {background-image: url("../img/CG_IMG/ChineseGarden.jpg");}
+.bannerImg6 {background-image: url("../img/ST_IMG/Sentosa.jpg");}
+.bannerImg7 {background-image: url("../img/CTImgs/chinatown.jpg");}
+.bannerImg8 {background-image: url("../img/CJ_IMGS/changi\ jewel.jpg");}
+.bannerImg9 {background-image: url("../img/BG_Imgs/botanic\ gardens.jpg");}
 
 /* Layout */
 header {
