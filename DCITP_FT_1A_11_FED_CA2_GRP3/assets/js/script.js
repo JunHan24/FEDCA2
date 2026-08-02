@@ -25,3 +25,41 @@ function filterDestinations() {
 
 searchInput.addEventListener("input", filterDestinations);
 categoryFilter.addEventListener("change", filterDestinations);
+
+// Banner Effect
+const images = [
+    "assets/img/MBSImgs/marinaBaySandsNight.jpg",
+    "assets/img/GBTBImgs/gardensBayTheBayNight.jpg",
+    "assets/img/ORImgs/OrchardRoad.jpg",
+    "assets/img/NGSImgs/NationalGallerySingapore.jpg",
+    "assets/img/CG_IMG/ChineseGarden.jpg",
+    "assets/img/ST_IMG/Sentosa.jpg",
+    "assets/img/CTImgs/chinatown.jpg",
+    "assets/img/CJ_IMGS/changi jewel.jpg",
+    "assets/img/BG_Imgs/botanic gardens.jpg"
+];
+
+let currentImage = 0;
+const banner = document.getElementById("banner1");
+
+function changeBanner() {
+
+    banner.style.opacity = 0;
+
+    setTimeout(() => {
+
+        banner.style.backgroundImage = `url(${images[currentImage]})`;
+
+        banner.style.opacity = 1;
+
+        currentImage++;
+
+        if (currentImage >= images.length)
+            currentImage = 0;
+
+    }, 400);
+
+}
+
+changeBanner();
+setInterval(changeBanner, 3000);

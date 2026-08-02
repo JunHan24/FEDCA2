@@ -38,7 +38,6 @@
 
 /* Banners & Images */
 .banner {
-  background-image: url("../img/placeholder.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -73,6 +72,17 @@
 .bannerImg7 {background-image: url("../img/CTImgs/chinatown.jpg");}
 .bannerImg8 {background-image: url("../img/CJ_IMGS/changi\ jewel.jpg");}
 .bannerImg9 {background-image: url("../img/BG_Imgs/botanic\ gardens.jpg");}
+
+#banner1 {
+  background-image: url(../img/MBSImgs/marinaBaySandsNight.jpg);
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 150px;
+  margin-bottom: 10px;
+  transition:opacity .7s;
+}
 
 /* Layout */
 header {
