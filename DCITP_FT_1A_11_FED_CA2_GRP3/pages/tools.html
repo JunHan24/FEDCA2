@@ -22,7 +22,32 @@
     <div id="banner1" data-image-path="../assets/img"></div>
 
     <main class="m-4">
-        
+
+        <section id="weather-tool" class="mb-5">
+            <h2 class="mb-3">Singapore Weather Forecast</h2>
+
+            <!-- Current weather card -->
+            <div id="weather-current" class="p-4 mb-4 rounded-3 d-flex flex-wrap align-items-center justify-content-between" style="background-color:#0F6B72; color:#ffffff;">
+                <div class="d-flex align-items-center gap-3">
+                    <img id="weather-current-icon" src="" alt="" width="64" height="64" style="display:none;">
+                    <div>
+                        <p class="fs-4 mb-0 fw-bold">Singapore</p>
+                        <p id="weather-current-desc" class="mb-0">Loading forecast…</p>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <p id="weather-current-temp" class="display-5 fw-bold mb-0">--°C</p>
+                    <p id="weather-current-updated" class="mb-0 small">&nbsp;</p>
+                </div>
+            </div>
+
+            <!-- Forecast row -->
+            <div id="weather-forecast" class="row weather-row g-3 text-center">
+                <p id="weather-forecast-placeholder" class="text-muted">Forecast loading…</p>
+            </div>
+
+        </section>
+
     </main>
 
     <footer class="p-5">

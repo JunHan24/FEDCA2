@@ -299,3 +299,13 @@ h1 {
 a:hover {
   color: #FF6B4A;
 }
+
+/*Weather Forecast*/
+.weather-row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.weather-row > div {
+    width: calc(100% / 7);
+}
