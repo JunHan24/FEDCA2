@@ -262,6 +262,18 @@ a:hover {
   opacity: 0.8;
 }
 
+/* Image Gallery */
+#destinationGallery {
+  max-width:600px;
+  margin:auto;
+}
+
+#destinationGallery img {
+  width: 200px;
+  object-fit:cover;
+  border-radius:15px;
+}
+
 /* Layout */
 header {
   background-color: #0F6B72;
