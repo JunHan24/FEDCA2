@@ -47,7 +47,6 @@ if (banner) {
         `${imagePath}/CTImgs/chinatown.jpg`,
         `${imagePath}/CJ_IMGS/ChangiJewel.jpg`,
         `${imagePath}/BG_Imgs/BotanicGardens.jpg`
-
     ];
 
     let currentImage = 0;
