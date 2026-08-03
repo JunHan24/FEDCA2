@@ -35,8 +35,8 @@ const images = [
     "assets/img/CG_IMG/ChineseGarden.jpg",
     "assets/img/ST_IMG/Sentosa.jpg",
     "assets/img/CTImgs/chinatown.jpg",
-    "assets/img/CJ_IMGS/changi jewel.jpg",
-    "assets/img/BG_Imgs/botanic gardens.jpg"
+    "assets/img/CJ_IMGS/ChangiJewel.jpg",
+    "assets/img/BG_Imgs/BotanicGardens.jpg"
 ];
 
 let currentImage = 0;
