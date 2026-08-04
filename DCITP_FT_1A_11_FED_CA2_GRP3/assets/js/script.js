@@ -201,3 +201,35 @@ function renderForecast(data, els) {
     forecastEl.appendChild(col);
   });
 }
+/* This is for the sg clock */
+function updateSGClock() {
+  const timeEl = document.getElementById('sgClockTime');
+  const dateEl = document.getElementById('sgClockDate');
+
+  if (!timeEl || !dateEl) return;
+
+  const now = new Date();
+
+  const timeString = now.toLocaleTimeString('en-SG', {
+    timeZone: 'Asia/Singapore',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: true
+  }).toUpperCase();
+
+  const dateString = now.toLocaleDateString('en-SG', {
+    timeZone: 'Asia/Singapore',
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+  });
+
+  timeEl.textContent = timeString;
+  dateEl.textContent = dateString;
+}
+
+if (document.getElementById('sgClockTime')) {
+  updateSGClock();
+  setInterval(updateSGClock, 1000);
+}

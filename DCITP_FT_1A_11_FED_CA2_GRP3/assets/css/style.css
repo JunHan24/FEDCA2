@@ -309,3 +309,60 @@ a:hover {
 .weather-row > div {
     width: calc(100% / 7);
 }
+
+/* Singapore Time Clock */
+.sg-clock-card {
+  max-width: 360px;
+  background-color: #ffffff;
+  border: 2px solid #0F6B72;
+  border-radius: 14px;
+  padding: 24px 32px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+ 
+.sg-clock-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #0F6B72;
+}
+ 
+.sg-clock-time {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #2B2B2B;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+ 
+.sg-clock-date {
+  font-size: 0.9rem;
+  color: #555555;
+}
+ 
+/* Layout */
+header {
+  background-color: #0F6B72;
+}
+ 
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+ 
+body {
+  background-color: #F7F3E9;
+}
+ 
+footer {
+  background-color: #0F6B72;
+}
+ 
+h1 {
+  color: #2B2B2B;
+}
+ 
+a:hover {
+  color: #FF6B4A;
+}
