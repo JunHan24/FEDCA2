@@ -366,3 +366,55 @@ h1 {
 a:hover {
   color: #FF6B4A;
 }
+
+/* Quick Information Table */
+
+.quick-info-wrapper {
+    max-width: 600px;
+    border: 3px solid #0F6B72;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.quick-info-table {
+    margin: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.quick-info-table th,
+.quick-info-table td {
+    padding: 14px 18px;
+    vertical-align: middle;
+}
+
+/* Left Column */
+.quick-info-table th {
+    width: 38%;
+    background-color: #0F6B72;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    box-shadow: inset 0 -2px #ffffff;
+}
+
+/* Remove divider from last row */
+.quick-info-table tr:last-child th {
+    box-shadow: none;
+}
+
+/* Right Column */
+.quick-info-table td {
+    background-color: #ffffff;
+    color: #2B2B2B;
+    border-top: none;
+    border-left: 2px solid #0F6B72;
+    border-right: none;
+    border-bottom: 1px solid #0F6B72;
+}
+
+/* Remove bottom border on last row */
+.quick-info-table tr:last-child td {
+    border-bottom: none;
+}
