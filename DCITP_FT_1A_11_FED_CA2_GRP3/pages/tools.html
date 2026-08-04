@@ -31,6 +31,40 @@
                 <p id="sgClockDate" class="sg-clock-date mb-0">Loading...</p>
             </div>
         </section>
+ <!-- Currency Converter -->
+        <section id="currencyCard" class="mb-4">
+            <h2 class="mb-3">Currency Converter</h2>
+            <div class="currency-card mx-auto">
+                <p class="currency-label mb-3">Convert to Singapore Dollar</p>
+
+                <div class="d-flex flex-wrap align-items-center justify-content-center gap-3">
+                    <div class="currency-input-group">
+                        <input type="number" id="currencyAmount" class="currency-input" value="100" min="0" step="any" inputmode="decimal">
+                        <select id="currencyFrom" class="currency-select">
+                            <option value="USD" selected>USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="AUD">AUD</option>
+                            <option value="JPY">JPY</option>
+                            <option value="CNY">CNY</option>
+                            <option value="MYR">MYR</option>
+                            <option value="INR">INR</option>
+                            <option value="IDR">IDR</option>
+                            <option value="HKD">HKD</option>
+                        </select>
+                    </div>
+
+                    <span class="currency-arrow">&#8594;</span>
+
+                    <div class="currency-result-group">
+                        <span id="currencyResult" class="currency-result">--</span>
+                        <span class="currency-sgd">SGD</span>
+                    </div>
+                </div>
+
+                <p id="currencyRateNote" class="currency-rate-note mt-3 mb-0">Loading exchange rate…</p>
+            </div>
+        </section>
 
 
         <section id="weather-tool" class="mb-5">

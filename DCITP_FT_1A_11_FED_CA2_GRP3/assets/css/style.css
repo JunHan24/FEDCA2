@@ -418,3 +418,112 @@ a:hover {
 .quick-info-table tr:last-child td {
     border-bottom: none;
 }
+/* This is the curreency exchange */
+.currency-card {
+  max-width: 560px;
+  background-color: #ffffff;
+  border: 2px solid #0F6B72;
+  border-radius: 14px;
+  padding: 24px 32px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.currency-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #0F6B72;
+}
+
+.currency-input-group {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.currency-input {
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  width: 130px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2B2B2B;
+  font-variant-numeric: tabular-nums;
+  background-color: #F7F3E9;
+}
+
+.currency-select {
+  border: none;
+  outline: none;
+  border-left: 1px solid #dddddd;
+  padding: 0 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #0F6B72;
+}
+
+.currency-arrow {
+  font-size: 1.8rem;
+  color: #0F6B72;
+  font-weight: 700;
+}
+
+.currency-result-group {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background-color: #F7F3E9;
+  border: 1px solid #dddddd;
+}
+
+.currency-result {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2B2B2B;
+  font-variant-numeric: tabular-nums;
+}
+
+.currency-sgd {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0F6B72;
+}
+
+.currency-rate-note {
+  font-size: 0.85rem;
+  color: #555555;
+}
+
+/* Layout */
+header {
+  background-color: #0F6B72;
+}
+ 
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+ 
+body {
+  background-color: #F7F3E9;
+}
+ 
+footer {
+  background-color: #0F6B72;
+}
+ 
+h1 {
+  color: #2B2B2B;
+}
+ 
+a:hover {
+  color: #FF6B4A;
+}

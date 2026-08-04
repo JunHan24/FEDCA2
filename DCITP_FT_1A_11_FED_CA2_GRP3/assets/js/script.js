@@ -233,3 +233,71 @@ if (document.getElementById('sgClockTime')) {
   updateSGClock();
   setInterval(updateSGClock, 1000);
 }
+/* This is the currency exchange function */
+document.addEventListener('DOMContentLoaded', () => {
+  if (document.getElementById('currencyCard')) {
+    initCurrencyConverter();
+  }
+});
+
+function initCurrencyConverter() {
+  const amountEl = document.getElementById('currencyAmount');
+  const fromEl = document.getElementById('currencyFrom');
+  const resultEl = document.getElementById('currencyResult');
+  const noteEl = document.getElementById('currencyRateNote');
+
+  if (!amountEl || !fromEl || !resultEl) return;
+
+  // Cache fetched rates so switching back to a currency doesn't re-fetch
+  const rateCache = {};
+
+  function formatResult(value) {
+    return value.toLocaleString('en-SG', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+
+  function recalculate() {
+    const currency = fromEl.value;
+    const rate = rateCache[currency];
+    const amount = parseFloat(amountEl.value);
+
+    if (rate === undefined) return;
+
+    if (isNaN(amount) || amount < 0) {
+      resultEl.textContent = '--';
+      return;
+    }
+
+    resultEl.textContent = formatResult(amount * rate);
+  }
+
+  async function loadRate(currency) {
+    if (rateCache[currency] !== undefined) {
+      recalculate();
+      return;
+    }
+
+    noteEl.textContent = 'Loading exchange rate…';
+
+    try {
+      const response = await fetch(`https://api.frankfurter.dev/v1/latest?base=${currency}&symbols=SGD`);
+      if (!response.ok) throw new Error(`Currency API returned ${response.status}`);
+      const data = await response.json();
+
+      const rate = data.rates.SGD;
+      rateCache[currency] = rate;
+
+      noteEl.textContent = `1 ${currency} = ${rate.toFixed(4)} SGD (as of ${data.date})`;
+      recalculate();
+
+    } catch (error) {
+      console.error('Failed to load currency rate:', error);
+      noteEl.textContent = 'Unable to load exchange rate right now. Please try again later.';
+      resultEl.textContent = '--';
+    }
+  }
+
+  fromEl.addEventListener('change', () => loadRate(fromEl.value));
+  amountEl.addEventListener('input', recalculate);
+
+  loadRate(fromEl.value);
+}
