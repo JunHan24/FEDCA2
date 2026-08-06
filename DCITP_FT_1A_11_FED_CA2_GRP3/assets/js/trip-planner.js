@@ -1,5 +1,6 @@
+
 /* =======================================================
-   SGCompass - Trip Planner
+   SGCompass — Trip Planner
    Steps: Trip Basics -> Itinerary -> Eats -> Attractions -> Download
 ======================================================= */
 
