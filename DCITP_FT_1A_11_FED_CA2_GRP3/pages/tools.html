@@ -92,6 +92,65 @@
 
         </section>
 
+        <!-- Trip Planner -->
+        <section id="tripPlanner" class="mb-5">
+            <h2 class="mb-3">Trip Planner</h2>
+            <p class="text-muted">Plan your Singapore trip in a few steps — set your days and budget, build a day-by-day itinerary, browse eats and attractions that fit, then download your plan.</p>
+
+            <!-- Trip Basics -->
+            <div class="planner-step p-4 mb-4">
+                <h4 class="mb-3">1. Trip Basics</h4>
+                <div class="row g-3 align-items-end">
+                    <div class="col-sm-4">
+                        <label for="tripDays" class="form-label">Number of Days</label>
+                        <input type="number" id="tripDays" class="form-control" min="1" max="14" value="3">
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="tripBudget" class="form-label">Total Budget (SGD)</label>
+                        <input type="number" id="tripBudget" class="form-control" min="0" step="10" placeholder="e.g. 300">
+                    </div>
+                    <div class="col-sm-4">
+                        <button id="startPlanningBtn" type="button" class="btn text-white w-100">Start Planning</button>
+                    </div>
+                </div>
+                <p id="tripBasicsError" class="text-danger small mt-2 mb-0 d-none">Please enter a valid number of days and budget.</p>
+                <div id="budgetTierResult" class="mt-3 d-none">
+                    <span id="budgetTierBadge" class="badge"></span>
+                    <span id="budgetTierText" class="ms-2"></span>
+                </div>
+            </div>
+
+            <!-- Daily Itinerary -->
+            <div id="itineraryStep" class="planner-step p-4 mb-4 d-none">
+                <h4 class="mb-1">2. Build Your Itinerary</h4>
+                <p class="text-muted small">Pick a place and time of day for each day of your trip.</p>
+                <div id="dayTabsNav" class="d-flex flex-wrap gap-2 mb-3"></div>
+                <div id="dayTabsContent"></div>
+            </div>
+
+            <!-- Places to Eat -->
+            <div id="eatStep" class="planner-step p-4 mb-4 d-none">
+                <h4 class="mb-1">3. Places to Eat</h4>
+                <p class="text-muted small">Recommended based on your budget.</p>
+                <div id="eateryResults" class="row g-3"></div>
+            </div>
+
+            <!-- Attractions -->
+            <div id="attractionsStep" class="planner-step p-4 mb-4 d-none">
+                <h4 class="mb-1">4. Attractions</h4>
+                <p class="text-muted small">Choose the type of attractions you're interested in.</p>
+                <div id="attractionChips" class="d-flex flex-wrap gap-2 mb-3"></div>
+                <div id="attractionResults" class="row g-3"></div>
+            </div>
+
+            <!-- Download -->
+            <div id="downloadStep" class="planner-step p-4 mb-4 d-none text-center">
+                <h4 class="mb-1">5. Your Plan is Ready</h4>
+                <p class="text-muted small">Download a copy of your personalised trip plan.</p>
+                <button id="downloadPlanBtn" type="button" class="btn text-white">Download Trip Plan (PDF)</button>
+            </div>
+        </section>
+
     </main>
 
     <footer class="p-5">

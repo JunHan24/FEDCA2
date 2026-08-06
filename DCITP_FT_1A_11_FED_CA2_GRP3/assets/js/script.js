@@ -301,3 +301,52 @@ function initCurrencyConverter() {
 
   loadRate(fromEl.value);
 }
+
+// Feedback Form
+
+const form = document.getElementById("feedbackForm");
+
+if(form){
+  form.addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    const email = document.getElementById("email");
+    const suggestion = document.getElementById("suggestion");
+    const question = document.getElementById("question");
+
+    const error = document.getElementById("messageError");
+    const success = document.getElementById("successMessage");
+
+    let valid = true;
+
+    // Reset
+    email.classList.remove("is-invalid");
+    suggestion.classList.remove("is-invalid");
+    question.classList.remove("is-invalid");
+    error.classList.add("d-none");
+    success.classList.add("d-none");
+
+    // Email required
+    if(email.value.trim() === ""){
+      email.classList.add("is-invalid");
+      valid = false;
+    }
+
+    // Must have suggestion or question
+    if(
+      suggestion.value.trim() === "" &&
+      question.value.trim() === ""
+    ){
+      suggestion.classList.add("is-invalid");
+      question.classList.add("is-invalid");
+      error.classList.remove("d-none");
+      valid = false;
+    }
+
+    if(valid){
+      success.classList.remove("d-none");
+      form.reset();
+    }
+  });
+}

@@ -22,7 +22,54 @@
     <div id="banner1" data-image-path="../assets/img"></div>
 
     <main class="m-4">
-        
+        <h3>Feedback Form</h3>
+        <form id="feedbackForm" novalidate class="m-4 p-4">
+
+            <!-- Name -->
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" placeholder="Enter your name" class="form-control" id="name">
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+                <label class="form-label">Email <span class="text-danger">*</span></label>
+                <input type="email" placeholder="Enter your email" class="form-control" id="email">
+                <div class="invalid-feedback">
+                    Please enter your email.
+                </div>
+            </div>
+
+            <!-- Suggestion -->
+            <div class="mb-3">
+                <label class="form-label">Suggestion</label>
+                <textarea class="form-control" placeholder="Enter your suggestions" id="suggestion" rows="4"></textarea>
+            </div>
+
+            <!-- Question -->
+            <div class="mb-3">
+                <label class="form-label">Question</label>
+                <textarea class="form-control" placeholder="Enter your questions" id="question" rows="4"></textarea>
+            </div>
+
+            <!-- Error -->
+            <div
+                id="messageError"
+                class="text-danger mb-3 d-none">
+                Please enter either a suggestion or a question.
+            </div>
+
+            <button class="btn btn-primary" type="submit">
+                Submit
+            </button>
+
+        </form>
+
+        <p
+            id="successMessage"
+            class="text-success mt-3 d-none">
+            Successfully submitted!
+        </p>
     </main>
 
     <footer class="p-5">
