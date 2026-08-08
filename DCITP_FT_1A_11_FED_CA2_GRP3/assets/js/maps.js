@@ -6,7 +6,7 @@
 // callback=initMap tells this script to run initMap() once Maps has loaded.
 (function loadGoogleMaps() {
   const script = document.createElement("script");
-  script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBq-XDQI5ZuIHnrTxh1EJ7icV3b2JQquRY&callback=initMap";
+  script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ07Lz8w5Yc-F7qva-9f00f3WwfMlpPyY&callback=initMap";
   script.async = true;
   script.defer = true;
   document.head.appendChild(script);
