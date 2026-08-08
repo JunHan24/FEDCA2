@@ -157,10 +157,10 @@
   margin:auto;
 }
 
-#destinationGallery img {
-  width: 200px;
+#destinationGallery img{
+  height:350px;
   object-fit:cover;
-  border-radius:15px;
+  border-radius: 10px;
 }
 
 /*Weather Forecast*/
