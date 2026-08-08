@@ -229,32 +229,6 @@ a:hover {
   font-size: 0.9rem;
   color: #555555;
 }
- 
-/* Layout */
-header {
-  background-color: #0F6B72;
-}
- 
-nav a {
-  text-decoration: none;
-  color: #ffffff;
-}
- 
-body {
-  background-color: #F7F3E9;
-}
- 
-footer {
-  background-color: #0F6B72;
-}
- 
-h1 {
-  color: #2B2B2B;
-}
- 
-a:hover {
-  color: #FF6B4A;
-}
 
 /* Quick Information Table */
 
