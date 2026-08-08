@@ -182,6 +182,15 @@
   width: calc(100% / 7);
 }
 
+#weather-current {
+  background-color:#0F6B72;
+  color:#ffffff;
+}
+
+#weather-current-icon {
+  display:none;
+}
+
 /* Singapore Time Clock */
 .sg-clock-card {
   max-width: 360px;
