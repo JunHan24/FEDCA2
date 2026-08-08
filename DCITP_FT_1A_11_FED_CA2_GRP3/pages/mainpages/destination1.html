@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="../../assets/js/maps.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
@@ -50,8 +51,9 @@
 
         <h3>Destination Details</h3>
         <section class="card my-4">
-            <a class="card-header btn d-flex justify-content-start" data-bs-toggle="collapse" href="#collapseOne">
-            About
+            <a class="card-header btn d-flex justify-content-between" data-bs-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <span class="fw-semibold text-dark">About</span>
+                <i class="bi bi-chevron-down accordion-icon"></i>
             </a>
             <div id="collapseOne" class="collapse">
                 <article class="card-body m-2">
