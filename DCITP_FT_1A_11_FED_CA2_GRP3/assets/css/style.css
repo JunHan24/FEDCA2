@@ -101,10 +101,19 @@
 }
 
 /* Map sidebar */
+#map {
+  height: 400px;
+  border-radius: 10px;
+  flex: 1 1 65%;
+  min-width: 280px;
+}
+
 #map-sidebar {
   background-color: #ffffff;
   border-radius: 10px;
   border: 1px solid #dddddd;
+  flex: 1 1 220px;
+  min-width: 220px;
 }
 
 .map-sidebar-list {
