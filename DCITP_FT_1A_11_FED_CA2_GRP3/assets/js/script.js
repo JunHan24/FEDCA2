@@ -73,7 +73,8 @@ if (banner) {
    SGCompass — Singapore Weather Forecast
    Powered by Open-Meteo (free, no API key required)
    Docs: https://open-meteo.com/
-   ======================================================= */
+======================================================= */
+
 document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('weather-tool')) {
         initWeatherForecast();

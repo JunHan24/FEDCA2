@@ -173,22 +173,58 @@
 }
 
 /*Weather Forecast*/
-.weather-row {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.weather-row > div {
-  width: calc(100% / 7);
-}
-
+/* Current weather card */
 #weather-current {
-  background-color:#0F6B72;
-  color:#ffffff;
+  background-color: #0F6B72;
+  color: #ffffff;
 }
 
 #weather-current-icon {
-  display:none;
+  display: none;
+}
+
+.weather-current-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+
+/* Forecast */
+#weather-forecast {
+  width: 100%;
+}
+
+.weather-day-card {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  color: #2B2B2B;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.weather-day-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.weather-day-name {
+  color: #2B2B2B;
+}
+
+.weather-day-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.weather-day-description {
+  color: #2B2B2B;
+}
+
+.weather-high {
+  color: #0F6B72;
+}
+
+.weather-low {
+  color: #6c757d;
 }
 
 /* Singapore Time Clock */
