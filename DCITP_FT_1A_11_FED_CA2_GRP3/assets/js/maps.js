@@ -101,14 +101,17 @@ const DESTINATIONS = {
     desc: "Singapore's premier shopping and lifestyle boulevard.",
     nearby: {
       restaurants: [
-        { name: "Food Republic @ Wisma Atria", lat: 1.3039, lng: 103.8323 },
-        { name: "Killiney Kopitiam", lat: 1.3011, lng: 103.8358 },
-        { name: "Old's Uncle Ice Cream Stand by Walls", lat: 1.3020, lng: 103.8330 },
+        { name: "MERCI MARCEL ORCHARD", lat: 1.3057, lng: 103.8283 },
+        { name: "FLNT | Nikkei Restaurant & Bar", lat: 1.3040, lng: 103.8318 },
+        { name: "The Dim Sum Place", lat: 1.3020, lng: 103.8365 },
       ],
       attractions: [
-        { name: "Orchard Central Rooftop Garden", lat: 1.3009, lng: 103.8392 },
-        { name: "Library@Orchard", lat: 1.3010, lng: 103.8388 },
-        { name: "The Istana", lat: 1.3049, lng: 103.8402 },
+        { name: "ION Orchard", lat: 1.3040, lng: 103.8318 },
+        { name: "ION Sky", lat: 1.3040, lng: 103.8317 },
+        { name: "Ngee Ann City", lat: 1.3037, lng: 103.8320 },
+        { name: "313@somerset", lat: 1.3007, lng: 103.8385 },
+        { name: "Paragon", lat: 1.3018, lng: 103.8352 },
+        { name: "Orchard Central", lat: 1.3009, lng: 103.8392 },
       ],
       busStops: [
         { name: "Orchard Stn/Tang Plaza", lat: 1.3046, lng: 103.8322 },
@@ -136,9 +139,13 @@ const DESTINATIONS = {
       restaurants: [
         { name: "National Kitchen by Violet Oon", lat: 1.2904, lng: 103.8518 },
         { name: "Odette", lat: 1.2903, lng: 103.8516 },
-        { name: "Smoke & Mirrors", lat: 1.2905, lng: 103.8519 },
+        { name: "Gilmore & Damian D'Silva", lat: 1.2905, lng: 103.8519 },
       ],
-      attractions: [],
+      attractions: [
+        { name: "Keppel Centre for Art Education", lat: 1.2902, lng: 103.8515 },
+        { name: "Padang Atrium", lat: 1.2905, lng: 103.8520 },
+        { name: "Supreme Court Historical Balcony", lat: 1.2900, lng: 103.8514 },
+      ],
       busStops: [
         { name: "Aft City Hall Stn Exit B", lat: 1.2925, lng: 103.8524 },
         { name: "Opp The Treasury Building", lat: 1.2908, lng: 103.8510 },
